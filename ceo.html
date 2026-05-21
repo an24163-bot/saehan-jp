@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- snt-ga4-v1 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M0NHF9NPQG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Consent Mode v2 — GDPR default denied
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500
+  });
+  // Restore prior consent if user already chose
+  try {
+    var c = localStorage.getItem('snt_cookie_consent');
+    if (c === 'granted') {
+      gtag('consent', 'update', {
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        analytics_storage: 'granted'
+      });
+    }
+  } catch(e){}
+  gtag('js', new Date());
+  gtag('config', 'G-M0NHF9NPQG', {
+    cookie_flags: 'SameSite=None;Secure',
+    cookie_domain: 'auto'
+  });
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>代表挨拶 | 株式会社セハンナノテック</title>
@@ -12,10 +47,10 @@
 <meta property="og:url" content="https://jp.saehannanotech.com/ceo.html">
 <meta property="og:locale" content="ja_JP">
 <link rel="canonical" href="https://jp.saehannanotech.com/ceo.html">
-<link rel="stylesheet" href="assets/css/main.css?v=20260443">
+<link rel="stylesheet" href="assets/css/main.css?v=20260507a">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="images/icon-192.png">
-<meta property="og:image" content="https://jp.saehannanotech.com/images/og-image.jpg">
+<meta property="og:image" content="https://jp.saehannanotech.com/images/og-image.jpg?v=20260510b">
 <meta property="og:site_name" content="Saehan Nanotech">
 <link rel="alternate" hreflang="ko" href="https://www.saehannanotech.com/ceo.html">
 <link rel="alternate" hreflang="en" href="https://en.saehannanotech.com/ceo.html">
@@ -26,9 +61,57 @@
 <link rel="alternate" hreflang="vi" href="https://vi.saehannanotech.com/ceo.html">
 <link rel="alternate" hreflang="fr" href="https://fr.saehannanotech.com/ceo.html">
 <link rel="alternate" hreflang="x-default" href="https://en.saehannanotech.com/ceo.html">
+<!-- snt-schema-v1 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://jp.saehannanotech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "代表挨拶",
+      "item": "https://jp.saehannanotech.com/ceo.html"
+    }
+  ]
+}
+</script>
+<!-- snt-clarity-v1 -->
+<script type="text/javascript">
+(function(){
+  function loadClarity(){
+    if (window.__sntClarityLoaded) return;
+    window.__sntClarityLoaded = true;
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wmr1yypwhk");
+  }
+  // Honor cookie consent: load only after user accepts (or already accepted)
+  try {
+    if (localStorage.getItem('snt_cookie_consent') === 'granted') {
+      loadClarity();
+    } else {
+      // Listen for accept click; banner script removes itself after click
+      document.addEventListener('click', function(ev){
+        if (ev.target && ev.target.classList && ev.target.classList.contains('snt-cc__accept')) {
+          setTimeout(loadClarity, 100);
+        }
+      }, {capture:true});
+    }
+  } catch(e){ loadClarity(); }
+})();
+</script>
 </head>
 <body class="snt-body-offset">
-<nav class="snt-nav"><div class="snt-nav__inner"><a href="index.html" class="snt-nav__logo"><img src="images/logo-en-horizontal.png" alt="Saehan Nanotech" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="height:36px;"><span class="snt-nav__logo-text" style="display:none;">Saehan Nanotech</span></a><div class="snt-nav__menu"><div class="snt-nav__item"><span class="snt-nav__link">会社情報<svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 1l4 4 4-4"/></svg></span><div class="snt-nav__dropdown"><a href="ceo.html" class="">代表挨拶</a><a href="history.html" class="">沿革</a><a href="certifications.html" class="">認証・特許</a><a href="directions.html" class="">お問い合わせ</a></div></div><div class="snt-nav__item"><span class="snt-nav__link">製品<svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 1l4 4 4-4"/></svg></span><div class="snt-nav__dropdown"><a href="machines.html" class="">製品一覧</a><a href="double-sided-drilling.html" class="">Both-Side Drilling（両面ドリリング）</a><a href="multi-wire-saw.html" class="">Multi Wire Sawing（マルチワイヤーソーイング）</a><a href="single-wire-saw.html" class="">Single Wire Sawing（シングルワイヤーソーイング）</a><a href="grinding-center.html" class="">Grinding Center（グラインディングセンター）</a><a href="core-drilling.html" class="">Core Drilling（コアドリリング）</a><a href="polishing.html" class="snt-current">Step Polishing（ステップポリシング）</a><a href="vertical-grinding.html" class="">Vertical Grinding（バーティカルグラインディング）</a><a href="nano-imprinting.html" class="">Nano Imprinting（ナノインプリンティング）</a></div></div><div class="snt-nav__item"><span class="snt-nav__link">事業<svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 1l4 4 4-4"/></svg></span><div class="snt-nav__dropdown"><a href="business.html" class="">事業概要</a><a href="research.html" class="">研究実績</a></div></div><div class="snt-nav__item"><span class="snt-nav__link">サポート<svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 1l4 4 4-4"/></svg></span><div class="snt-nav__dropdown"><a href="notice.html" class="">お知らせ</a><a href="faq.html" class="">よくある質問</a></div></div></div><div class="snt-nav__right"><div class="snt-nav__lang-picker"><button class="snt-nav__lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択"><svg class="globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span>EN</span><svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button><div class="snt-nav__lang-menu" role="menu"><a href="https://www.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">한국어</span></a><a href="https://en.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">English</span></a><a href="https://jp.saehannanotech.com" role="menuitem" class="snt-nav__lang-item snt-nav__lang-item--active" aria-current="true"><span class="snt-nav__lang-name">日本語</span></a><a href="https://zh.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">简体中文</span></a><a href="https://tw.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">繁體中文</span></a><a href="https://de.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">Deutsch</span></a><a href="https://vi.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">Tiếng Việt</span></a><a href="https://fr.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">Français</span></a></div></div><a href="directions.html" class="snt-nav__cta">お問い合わせ</a></div><button class="snt-nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="snt-nav-mobile" type="button"><span></span><span></span><span></span></button></div></nav><div class="snt-nav__mobile" id="snt-nav-mobile"><div class="snt-mobile-group"><span class="snt-mobile-label">会社情報</span><a href="ceo.html" class="snt-mobile-link">代表挨拶</a><a href="history.html" class="snt-mobile-link">沿革</a><a href="certifications.html" class="snt-mobile-link">認証・特許</a><a href="directions.html" class="snt-mobile-link">お問い合わせ</a></div><div class="snt-mobile-group"><span class="snt-mobile-label">製品</span><a href="machines.html" class="snt-mobile-link">製品一覧</a><a href="double-sided-drilling.html" class="snt-mobile-link">Both-Side Drilling（両面ドリリング）</a><a href="multi-wire-saw.html" class="snt-mobile-link">Multi Wire Sawing（マルチワイヤーソーイング）</a><a href="single-wire-saw.html" class="snt-mobile-link">Single Wire Sawing（シングルワイヤーソーイング）</a><a href="grinding-center.html" class="snt-mobile-link">Grinding Center（グラインディングセンター）</a><a href="core-drilling.html" class="snt-mobile-link">Core Drilling（コアドリリング）</a><a href="polishing.html" class="snt-mobile-link">Step Polishing（ステップポリシング）</a><a href="vertical-grinding.html" class="snt-mobile-link">Vertical Grinding（バーティカルグラインディング）</a><a href="nano-imprinting.html" class="snt-mobile-link">Nano Imprinting（ナノインプリンティング）</a></div><div class="snt-mobile-group"><span class="snt-mobile-label">事業</span><a href="business.html" class="snt-mobile-link">事業概要</a><a href="research.html" class="snt-mobile-link">研究実績</a></div><div class="snt-mobile-group"><span class="snt-mobile-label">サポート</span><a href="notice.html" class="snt-mobile-link">お知らせ</a><a href="faq.html" class="snt-mobile-link">よくある質問</a></div><div style="padding:16px 4px 0;"><div class="snt-mobile-lang"><div class="snt-mobile-lang__label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>言語</div><div class="snt-mobile-lang__items"><a href="https://www.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">한국어</span></a><a href="https://en.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">English</span></a><a href="https://jp.saehannanotech.com" class="snt-mobile-lang__item snt-mobile-lang__item--active" aria-current="true"><span class="snt-mobile-lang__name">日本語</span></a><a href="https://zh.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">简体中文</span></a><a href="https://tw.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">繁體中文</span></a><a href="https://de.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">Deutsch</span></a><a href="https://vi.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">Tiếng Việt</span></a><a href="https://fr.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">Français</span></a></div></div><a href="directions.html" style="display:block;margin-top:8px;padding:13px;background:#004ea1;color:#fff;border-radius:8px;font-weight:700;font-size:14px;text-align:center;font-family:Pretendard,sans-serif;">お問い合わせ</a></div></div>
+<nav class="snt-nav"><div class="snt-nav__inner"><a href="index.html" class="snt-nav__logo"><img src="images/logo-en-horizontal.png" alt="Saehan Nanotech" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" style="height:36px;"><span class="snt-nav__logo-text" style="display:none;">Saehan Nanotech</span></a><div class="snt-nav__menu"><div class="snt-nav__item"><span class="snt-nav__link">会社情報<svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 1l4 4 4-4"/></svg></span><div class="snt-nav__dropdown"><a href="ceo.html" class="snt-current">代表挨拶</a><a href="history.html" class="">沿革</a><a href="certifications.html" class="">認証・特許</a><a href="directions.html" class="">お問い合わせ</a></div></div><div class="snt-nav__item"><span class="snt-nav__link">製品<svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 1l4 4 4-4"/></svg></span><div class="snt-nav__dropdown"><a href="machines.html" class="">製品一覧</a><a href="double-sided-drilling.html" class="">Both-Side Drilling（両面ドリリング）</a><a href="multi-wire-saw.html" class="">Multi Wire Sawing（マルチワイヤーソーイング）</a><a href="single-wire-saw.html" class="">Single Wire Sawing（シングルワイヤーソーイング）</a><a href="grinding-center.html" class="">Grinding Center（グラインディングセンター）</a><a href="core-drilling.html" class="">Core Drilling（コアドリリング）</a><a href="polishing.html" class="">Step Polishing（ステップポリシング）</a><a href="vertical-grinding.html" class="">Vertical Grinding（バーティカルグラインディング）</a><a href="nano-imprinting.html" class="">Nano Imprinting（ナノインプリンティング）</a></div></div><div class="snt-nav__item"><span class="snt-nav__link">事業<svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 1l4 4 4-4"/></svg></span><div class="snt-nav__dropdown"><a href="business.html" class="">事業概要</a><a href="research.html" class="">研究実績</a></div></div><div class="snt-nav__item"><span class="snt-nav__link">サポート<svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 1l4 4 4-4"/></svg></span><div class="snt-nav__dropdown"><a href="notice.html" class="">お知らせ</a><a href="faq.html" class="">よくある質問</a></div></div></div><div class="snt-nav__right"><div class="snt-nav__lang-picker"><button class="snt-nav__lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択"><svg class="globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span>EN</span><svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></button><div class="snt-nav__lang-menu" role="menu"><a href="https://www.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">한국어</span></a><a href="https://en.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">English</span></a><a href="https://jp.saehannanotech.com" role="menuitem" class="snt-nav__lang-item snt-nav__lang-item--active" aria-current="true"><span class="snt-nav__lang-name">日本語</span></a><a href="https://zh.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">简体中文</span></a><a href="https://tw.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">繁體中文</span></a><a href="https://de.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">Deutsch</span></a><a href="https://vi.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">Tiếng Việt</span></a><a href="https://fr.saehannanotech.com" role="menuitem" class="snt-nav__lang-item"><span class="snt-nav__lang-name">Français</span></a></div></div><a href="directions.html" class="snt-nav__cta">お問い合わせ</a></div><button class="snt-nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="snt-nav-mobile" type="button"><span></span><span></span><span></span></button></div></nav><div class="snt-nav__mobile" id="snt-nav-mobile"><div class="snt-mobile-group"><span class="snt-mobile-label">会社情報</span><a href="ceo.html" class="snt-mobile-link">代表挨拶</a><a href="history.html" class="snt-mobile-link">沿革</a><a href="certifications.html" class="snt-mobile-link">認証・特許</a><a href="directions.html" class="snt-mobile-link">お問い合わせ</a></div><div class="snt-mobile-group"><span class="snt-mobile-label">製品</span><a href="machines.html" class="snt-mobile-link">製品一覧</a><a href="double-sided-drilling.html" class="snt-mobile-link">Both-Side Drilling（両面ドリリング）</a><a href="multi-wire-saw.html" class="snt-mobile-link">Multi Wire Sawing（マルチワイヤーソーイング）</a><a href="single-wire-saw.html" class="snt-mobile-link">Single Wire Sawing（シングルワイヤーソーイング）</a><a href="grinding-center.html" class="snt-mobile-link">Grinding Center（グラインディングセンター）</a><a href="core-drilling.html" class="snt-mobile-link">Core Drilling（コアドリリング）</a><a href="polishing.html" class="snt-mobile-link">Step Polishing（ステップポリシング）</a><a href="vertical-grinding.html" class="snt-mobile-link">Vertical Grinding（バーティカルグラインディング）</a><a href="nano-imprinting.html" class="snt-mobile-link">Nano Imprinting（ナノインプリンティング）</a></div><div class="snt-mobile-group"><span class="snt-mobile-label">事業</span><a href="business.html" class="snt-mobile-link">事業概要</a><a href="research.html" class="snt-mobile-link">研究実績</a></div><div class="snt-mobile-group"><span class="snt-mobile-label">サポート</span><a href="notice.html" class="snt-mobile-link">お知らせ</a><a href="faq.html" class="snt-mobile-link">よくある質問</a></div><div style="padding:16px 4px 0;"><div class="snt-mobile-lang"><div class="snt-mobile-lang__label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>言語</div><div class="snt-mobile-lang__items"><a href="https://www.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">한국어</span></a><a href="https://en.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">English</span></a><a href="https://jp.saehannanotech.com" class="snt-mobile-lang__item snt-mobile-lang__item--active" aria-current="true"><span class="snt-mobile-lang__name">日本語</span></a><a href="https://zh.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">简体中文</span></a><a href="https://tw.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">繁體中文</span></a><a href="https://de.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">Deutsch</span></a><a href="https://vi.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">Tiếng Việt</span></a><a href="https://fr.saehannanotech.com" target="_blank" class="snt-mobile-lang__item"><span class="snt-mobile-lang__name">Français</span></a></div></div><a href="directions.html" style="display:block;margin-top:8px;padding:13px;background:#004ea1;color:#fff;border-radius:8px;font-weight:700;font-size:14px;text-align:center;font-family:Pretendard,sans-serif;">お問い合わせ</a></div></div>
 <section class="snt-pb" style="background-image:url('images/banner-default.jpg')"><div class="snt-pb__overlay"></div><div class="snt-pb__inner"><span class="snt-pb__eyebrow">ABOUT US</span><h1 class="snt-pb__title">代表挨拶</h1><p class="snt-pb__sub">代表取締役 Ahn Kook Jin より、精密半導体加工装置製造についてのメッセージ。</p></div></section><section class="snt-ceo"><div class="snt-ceo__inner"><div class="snt-ceo__head" data-snt-reveal><span class="snt-ceo__eyebrow">ABOUT US — CEO GREETING</span><h2 class="snt-ceo__title">代表者からの<span class="snt-ceo__accent">ご挨拶</span></h2></div><div class="snt-ceo__body" data-snt-reveal><div class="snt-ceo__photo"><img src="images/factory-exterior.jpg" alt="Ahn Kook Jin, CEO of Saehan Nanotech" class="snt-ceo__photo-img" loading="lazy"></div><div class="snt-ceo__message"><p>世界各国のお客様およびパートナーの皆様へ</p><p>半導体業界では、製造工程に関わるすべての部品に対し、より厳しい公差とより高い生産性が求められております。当社セハンナノテックは、この工程チェーンの最前線にある加工課題 — エッチング、CVD、ALDチャンバーを支える精密ドリリング消耗部品 — の解決に注力しております。</p><p>当社の特許取得済み Both-Side Spindle Drilling Machine（両面同時ドリリングマシン、ANT-BSSD500）は、現場での直接的な観察から生まれました。従来の電極ドリリングにおいてワーク反転工程こそが同心度不良の最大の原因であるという気づきから、両面を同時に加工することで誤差を根本から解消いたしました。その結果、20μm以内の同心度を常に維持しながら、垂直型装置と比べて2~3倍の生産性を実現しております。</p><p>ドリリング技術に加え、マルチワイヤーおよびシングルワイヤーのダイヤモンドワイヤーソーは、単結晶シリコン、SiC、サファイア、クォーツ、AlNなどの難削材・脆性半導体材料の切断に対する総合ソリューションを提供し、業界最高水準のカーフロス性能を実現しております。</p><p>当社が出荷するすべての装置には一つの約束があります。「工場を出る装置は仕様を満たしている」という信念です。半導体製造におけるダウンタイムが分単位でコストに直結することを承知しており、実機トレーニングと迅速なアフターサービスでお客様をサポートいたします。</p><p>皆様の精密加工パートナーとして、末永くお取引いただけますよう心よりお願い申し上げます。</p><div class="snt-ceo__sig"><strong>Ahn Kook Jin</strong><span>CEO &amp; Founder, Saehan Nanotech Co., Ltd.</span></div></div></div></div></section><style>.snt-ceo{--snt-blue:#004ea1;--snt-navy:#0f1a33;--snt-muted:#6a7589;--snt-line:#e6e9f0;background:#fff;padding:clamp(60px,8vw,110px) clamp(20px,4vw,48px);font-family:"Pretendard","Noto Sans KR",-apple-system,sans-serif;-webkit-font-smoothing:antialiased;}.snt-ceo *{box-sizing:border-box;}.snt-ceo h2,.snt-ceo p,.snt-ceo span,.snt-ceo strong{all:unset;display:revert;box-sizing:border-box;font-family:inherit;}.snt-ceo__inner{max-width:1000px;margin:0 auto;}.snt-ceo__head{margin-bottom:clamp(36px,5vw,56px);opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);}.snt-ceo__head.is-visible{opacity:1;transform:translateY(0);}.snt-ceo .snt-ceo__eyebrow{display:inline-block;font-size:13px!important;font-weight:700!important;letter-spacing:.22em;color:var(--snt-blue)!important;margin-bottom:12px!important;}.snt-ceo .snt-ceo__title{display:block;font-size:clamp(28px,3.5vw,44px)!important;font-weight:800!important;color:var(--snt-navy)!important;letter-spacing:-.02em;line-height:1.2!important;}.snt-ceo__accent{color:var(--snt-blue)!important;}.snt-ceo__body{display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:start;opacity:0;transform:translateY(24px);transition:opacity .8s .1s cubic-bezier(.2,.7,.2,1),transform .8s .1s cubic-bezier(.2,.7,.2,1);}.snt-ceo__body.is-visible{opacity:1;transform:translateY(0);}.snt-ceo__photo-img{width:100%;height:auto;border-radius:16px;box-shadow:0 12px 32px -12px rgba(15,26,51,.2);}.snt-ceo__message{display:flex;flex-direction:column;gap:18px;}.snt-ceo .snt-ceo__message p{display:block;font-size:15px!important;color:#3a4560!important;line-height:1.9!important;}.snt-ceo__sig{margin-top:8px;padding-top:20px;border-top:1px solid var(--snt-line);display:flex;flex-direction:column;gap:4px;}.snt-ceo .snt-ceo__sig strong{display:block;font-size:18px!important;font-weight:800!important;color:var(--snt-navy)!important;}.snt-ceo .snt-ceo__sig span{display:block;font-size:13px!important;color:var(--snt-muted)!important;}@media(max-width:768px){.snt-ceo__body{grid-template-columns:1fr;gap:32px;}}</style>
 
 <!-- CTA -->
@@ -79,8 +162,50 @@
   </div>
 </div>
 </footer>
-<script src="assets/js/main.js?v=20260443"></script>
+<script src="assets/js/main.js?v=20260507a"></script>
 <script>var _y=document.getElementById('snt-yr');if(_y)_y.textContent=new Date().getFullYear();</script>
+
+<!-- snt-cookie-banner-v1 -->
+<style>
+.snt-cc{position:fixed;bottom:16px;right:16px;left:16px;max-width:420px;margin-left:auto;background:#fff;border:1px solid #e6e9f0;border-radius:12px;box-shadow:0 18px 44px -12px rgba(15,26,51,.18),0 0 0 1px rgba(15,26,51,.04);padding:18px 20px;font-family:Pretendard,"Noto Sans KR",-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;line-height:1.55;color:#1b2333;z-index:10000;}
+.snt-cc[hidden]{display:none;}
+.snt-cc__title{font-size:14px;font-weight:700;margin:0 0 6px;color:#0f1a33;}
+.snt-cc__desc{margin:0 0 14px;font-size:12.5px;color:#6a7589;}
+.snt-cc__btns{display:flex;gap:8px;}
+.snt-cc__btn{flex:1;padding:9px 12px;font-size:12.5px;font-weight:700;border-radius:6px;border:1px solid transparent;cursor:pointer;font-family:inherit;line-height:1;}
+.snt-cc__accept{background:#004ea1;color:#fff;}
+.snt-cc__accept:hover{background:#003478;}
+.snt-cc__reject{background:#fff;color:#6a7589;border-color:#e6e9f0;}
+.snt-cc__reject:hover{color:#1b2333;border-color:#1b2333;}
+@media(max-width:480px){.snt-cc{left:12px;right:12px;bottom:12px;padding:14px 16px;}}
+</style>
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('snt_cookie_consent')) return;
+  } catch(e){}
+  var b = document.createElement('div');
+  b.className = 'snt-cc';
+  b.setAttribute('role', 'dialog');
+  b.setAttribute('aria-label', 'Cookie consent');
+  b.innerHTML = '<h3 class="snt-cc__title">プライバシーについて</h3><p class="snt-cc__desc">当サイトはトラフィック分析と体験向上のためCookieを使用します。「すべて承諾」をクリックすると分析Cookieに同意したことになります。いつでも変更可能です。</p><div class="snt-cc__btns"><button type="button" class="snt-cc__btn snt-cc__reject">すべて拒否</button><button type="button" class="snt-cc__btn snt-cc__accept">すべて承諾</button></div>';
+  document.body.appendChild(b);
+  function decide(granted){
+    try { localStorage.setItem('snt_cookie_consent', granted ? 'granted' : 'denied'); } catch(e){}
+    if (window.gtag) {
+      gtag('consent', 'update', {
+        ad_storage: granted ? 'granted' : 'denied',
+        ad_user_data: granted ? 'granted' : 'denied',
+        ad_personalization: granted ? 'granted' : 'denied',
+        analytics_storage: granted ? 'granted' : 'denied'
+      });
+    }
+    b.remove();
+  }
+  b.querySelector('.snt-cc__accept').addEventListener('click', function(){ decide(true); });
+  b.querySelector('.snt-cc__reject').addEventListener('click', function(){ decide(false); });
+})();
+</script>
 <!-- snt-fab-include -->
 <script src="assets/js/floating-cta.js?v=20260521"></script>
 </body>
